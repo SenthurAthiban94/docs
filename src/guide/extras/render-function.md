@@ -497,7 +497,7 @@ export default {
   render() {
     return [
       // <div><slot /></div>
-      h('div', this.$slots.default()),
+      h('div', this.$slots.default),
 
       // <div><slot name="footer" :text="message" /></div>
       h(
@@ -515,7 +515,7 @@ JSX equivalent:
 
 ```jsx
 // <div><slot /></div>
-<div>{this.$slots.default()}</div>
+<div>{this.$slots.default}</div>
 
 // <div><slot name="footer" :text="message" /></div>
 <div>{this.$slots.footer({ text: this.message })}</div>
